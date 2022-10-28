@@ -1,0 +1,51 @@
+
+
+<!--INTERACTIVE BUTTON-->
+
+<!DOCTYPE html> 
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div#area {
+            font: helvetica 25pt;
+            background-color: deeppink;
+            color:aliceblue;
+            width: 200px;
+            line-height: 200px;
+            text-align: center;
+
+
+        }
+    </style>
+</head>
+<body>
+    <div id="area" onclick ="click1()" onmouseenter="enter()" onmouseout="left()">
+        Try something ...
+    </div>
+
+    <script>
+        var a = window.document.getElementById("area")
+        
+        function click1(){
+           
+            a.innerText = "iT HURTS"
+            a.style.background = "red"
+        }
+        function enter(){
+           
+            a.innerText = "HELLO guys"
+            a.style.background = "blue"
+        }
+        function left (){
+            a.innerText = "You lefte me!"
+            a.style.background = "black"
+        }
+
+    </script>
+    
+</body>
+</html>
